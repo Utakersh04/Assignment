@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: #f4f4f4;
+}
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 1rem;
+}
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+.error {
+  color: red;
+  font-size: 0.85rem;
+}
+.success {
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
+}
+.toggle-container {
+  margin-top: 1rem;
+}
+button {
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+@media (min-width: 900px) {
+  .form-container {
+    width: 50%;
+  }
+}
+@media (max-width: 899px) {
+  .form-container {
+    width: 100%;
+  }
+}
